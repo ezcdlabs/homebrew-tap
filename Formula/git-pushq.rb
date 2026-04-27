@@ -5,21 +5,21 @@
 class GitPushq < Formula
   desc "Serverless push queue for trunk-based development via git refs"
   homepage "https://github.com/ezcdlabs/pushq"
-  version "0.0.2"
+  version "0.0.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ezcdlabs/pushq/releases/download/v0.0.2/git-pushq_0.0.2_darwin_amd64.tar.gz"
-      sha256 "dd942c4e61876c7160e6d2d5a45a455999d06e3b890b0bd3470b9ddf3330a105"
+      url "https://github.com/ezcdlabs/pushq/releases/download/v0.0.3/git-pushq_0.0.3_darwin_amd64.tar.gz"
+      sha256 "422a97b5b4bd072473883d35385c1ba4097a35d59ce69f37c74313085fd90e36"
 
       define_method(:install) do
         bin.install "git-pushq"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ezcdlabs/pushq/releases/download/v0.0.2/git-pushq_0.0.2_darwin_arm64.tar.gz"
-      sha256 "141d0dc24a6071144f3e4a03dd3ce9991c09f40f7515bdea6b306ade7bd3a969"
+      url "https://github.com/ezcdlabs/pushq/releases/download/v0.0.3/git-pushq_0.0.3_darwin_arm64.tar.gz"
+      sha256 "2d56ae4ed6bf097a23dd7d61b88542d54d6bec1b70f16a09d6ef68cdd7ae2d44"
 
       define_method(:install) do
         bin.install "git-pushq"
@@ -29,15 +29,15 @@ class GitPushq < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ezcdlabs/pushq/releases/download/v0.0.2/git-pushq_0.0.2_linux_amd64.tar.gz"
-      sha256 "76746777545a80c306ef2af0a5191a01642640b783d96446c21bd235c1599466"
+      url "https://github.com/ezcdlabs/pushq/releases/download/v0.0.3/git-pushq_0.0.3_linux_amd64.tar.gz"
+      sha256 "46de79b87b717171eda891c07d34fa0d4aea58d7b1366d035bca5f0e0b649beb"
       define_method(:install) do
         bin.install "git-pushq"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ezcdlabs/pushq/releases/download/v0.0.2/git-pushq_0.0.2_linux_arm64.tar.gz"
-      sha256 "2f58665888afffe9f3145f7c8efcabba029feb4dcd3649ed424b0a17b7b044cd"
+      url "https://github.com/ezcdlabs/pushq/releases/download/v0.0.3/git-pushq_0.0.3_linux_arm64.tar.gz"
+      sha256 "e2bb5940e6d1f9dc6f700550ec593b231b69df102e0e02ee1eef24c09d41fd1b"
       define_method(:install) do
         bin.install "git-pushq"
       end

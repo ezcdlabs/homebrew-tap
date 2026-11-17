@@ -5,21 +5,21 @@
 class GitClarity < Formula
   desc "Commit-centric pipeline status TUI for trunk-based development via git refs"
   homepage "https://github.com/ezcdlabs/clarity"
-  version "0.25.0"
+  version "0.25.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ezcdlabs/clarity/releases/download/v0.25.0/git-clarity_0.25.0_darwin_amd64.tar.gz"
-      sha256 "eecebdc8da5ec21cdbdf725a3f9b7f37ce10fe21bdf0519987309b62b50bf59a"
+      url "https://github.com/ezcdlabs/clarity/releases/download/v0.25.1/git-clarity_0.25.1_darwin_amd64.tar.gz"
+      sha256 "ef94ef734dfe99304c43a2826742edc1bdb65f79f2ff1ed09bac4324ffe513c4"
 
       define_method(:install) do
         bin.install "git-clarity"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ezcdlabs/clarity/releases/download/v0.25.0/git-clarity_0.25.0_darwin_arm64.tar.gz"
-      sha256 "17ae553f1f0f5fad6596c7e2a7480fac1499a78e205b50aa1fb6554cd1f0d2cf"
+      url "https://github.com/ezcdlabs/clarity/releases/download/v0.25.1/git-clarity_0.25.1_darwin_arm64.tar.gz"
+      sha256 "203ed34e3c1de6c3f8b4498d658d3a3f0f16d54bcb8b048c467c5b96ce814d1b"
 
       define_method(:install) do
         bin.install "git-clarity"
@@ -29,15 +29,15 @@ class GitClarity < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ezcdlabs/clarity/releases/download/v0.25.0/git-clarity_0.25.0_linux_amd64.tar.gz"
-      sha256 "8e0472b857a6a3e04cd05184023280a0623c6d387066b41ec1115240bf6cd9ff"
+      url "https://github.com/ezcdlabs/clarity/releases/download/v0.25.1/git-clarity_0.25.1_linux_amd64.tar.gz"
+      sha256 "b679ded1e6d2a7062d6f0acece6fce3fe69cf3bdf4ac7b73d5fb534b32013958"
       define_method(:install) do
         bin.install "git-clarity"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ezcdlabs/clarity/releases/download/v0.25.0/git-clarity_0.25.0_linux_arm64.tar.gz"
-      sha256 "8dd5a9246f1c0a00dd2ea8fd8f9c3baa6d374e86ee24aedaa696368b4dd459fc"
+      url "https://github.com/ezcdlabs/clarity/releases/download/v0.25.1/git-clarity_0.25.1_linux_arm64.tar.gz"
+      sha256 "a29ece34bfbb91dfd10681daefaa4cad6587fcfc207948b3ac3dab770dbbb312"
       define_method(:install) do
         bin.install "git-clarity"
       end
